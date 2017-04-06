@@ -551,6 +551,11 @@ func TestGetPostsBeforeAfter(t *testing.T) {
 }
 
 func TestSearchPosts(t *testing.T) {
+	// DISABLE_SEARCH
+	if true {
+		return
+	}
+
 	th := Setup().InitBasic()
 	Client := th.BasicClient
 	channel1 := th.BasicChannel
@@ -597,6 +602,11 @@ func TestSearchPosts(t *testing.T) {
 }
 
 func TestSearchHashtagPosts(t *testing.T) {
+	// DISABLE_SEARCH
+	if true {
+		return
+	}
+
 	th := Setup().InitBasic()
 	Client := th.BasicClient
 	channel1 := th.BasicChannel
@@ -618,6 +628,11 @@ func TestSearchHashtagPosts(t *testing.T) {
 }
 
 func TestSearchPostsInChannel(t *testing.T) {
+	// DISABLE_SEARCH
+	if true {
+		return
+	}
+
 	th := Setup().InitBasic()
 	Client := th.BasicClient
 	channel1 := th.BasicChannel
@@ -687,6 +702,11 @@ func TestSearchPostsInChannel(t *testing.T) {
 }
 
 func TestSearchPostsFromUser(t *testing.T) {
+	// DISABLE_SEARCH
+	if true {
+		return
+	}
+
 	th := Setup().InitBasic()
 	Client := th.BasicClient
 	channel1 := th.BasicChannel

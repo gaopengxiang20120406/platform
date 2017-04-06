@@ -751,6 +751,15 @@ func (s SqlPostStore) Search(teamId string, userId string, params *model.SearchP
 	go func() {
 		result := StoreResult{}
 
+		// DISABLE_SEARCH
+		if true {
+			list := &model.PostList{}
+			list.MakeNonNil()
+			result.Data = list
+			storeChannel <- result
+			return
+		}
+
 		queryParams := map[string]interface{}{
 			"TeamId": teamId,
 			"UserId": userId,
